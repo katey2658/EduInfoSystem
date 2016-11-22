@@ -1,0 +1,130 @@
+package com.katey2658.ems.dao.impl;
+
+import com.katey2658.ems.dao.UserDAO;
+import com.katey2658.ems.entity.User;
+
+import java.util.Collection;
+
+/**
+ * Created by 11456 on 2016/11/21.
+ */
+public class UserDAOImpl implements UserDAO {
+
+    /**
+     * 添加一个用户信息
+     * @param user
+     * @return
+     */
+    @Override
+    public boolean addUser(User user) {
+        return false;
+    }
+
+    /**
+     * 通过用户Id删除一个用户
+     * @param userId
+     * @return
+     */
+    @Override
+    public boolean deleteUserById(String userId) {
+        return false;
+    }
+
+    /**
+     * 更新一个用户的信息
+     * @param user
+     * @return
+     */
+    @Override
+    public boolean updateUser(User user) {
+        return false;
+    }
+
+    /**
+     * 根据Id查询一个用户信息
+     * @param userId
+     * @return
+     */
+    @Override
+    public User findUserById(String userId) {
+        return null;
+    }
+    /**
+     * 根据Id集合查询用户信息集合
+     * @param ids
+     * @return
+     */
+    @Override
+    public Collection<User> findUserByIds(Collection<String> ids) {
+        return null;
+    }
+
+    /**
+     * 根据用户名查询用户集合
+     * @param name
+     * @return
+     */
+    @Override
+    public Collection<User> findUserByName(String name) {
+        return null;
+    }
+
+    /**
+     * 根据用户邮箱查询用户信息
+     * @param userMail
+     * @return 用户信息
+     */
+    @Override
+    public Collection<User> findUserByMail(String userMail) {
+        return null;
+    }
+
+    /**
+     * 根据年龄来查询用户集合
+     * @param userAge 用户年龄
+     * @param page 页码
+     * @param size 每一页记录条数
+     * @return 用户信息集合
+     */
+    @Override
+    public Collection<User> findUserByAge(int userAge, int page, int size) {
+        return null;
+    }
+
+    /**
+     * 根据性别来查询用户集合
+     * @param userSex 用户性别
+     * @param page 页码
+     * @param size 每一页的记录数
+     * @return 用户信息集合
+     */
+    @Override
+    public Collection<User> findUserBySex(String userSex, int page, int size) {
+        return null;
+    }
+
+    /**
+     * 根据地址来查询用户信息集合
+     * @param userAddr
+     * @param page
+     * @param size
+     * @return
+     */
+    @Override
+    public Collection<User> findUserByAddr(String userAddr, int page, int size) {
+        return null;
+    }
+
+    /**
+     * 根据用户是否在线来查询用户
+     * @param isOrNotOnline 是否在线
+     * @param page 页码
+     * @param size  每一页的记录条数
+     * @return 返回查询的记录
+     */
+    @Override
+    public Collection<User> findUserOnline(boolean isOrNotOnline, int page, int size) {
+        return null;
+    }
+
+}
