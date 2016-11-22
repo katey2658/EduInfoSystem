@@ -11,7 +11,6 @@ public class User {
      */
     public User(){
     }
-
     /**
      * 有参数构造方法
      * @param userName
@@ -26,7 +25,6 @@ public class User {
         this.userPwd=userPwd;
         this.userMail=userMail;
     }
-
     /**
      * 用户id
      */
@@ -129,5 +127,18 @@ public class User {
 
     public boolean isOnline() {
         return online;
+    }
+
+    /**
+     * 账户是否可用，如果不可用，就是账户一般已经关闭
+     */
+    private boolean active;
+
+    public void setActive(boolean active) {
+        this.active = active;
+    }
+
+    public boolean isActive(){
+        return active;
     }
 }

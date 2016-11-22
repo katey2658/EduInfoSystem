@@ -29,6 +29,20 @@ public class Course {
 
 
     /**
+     * 课程所属学院
+     */
+    private String college;
+
+    public void setCollege(String college) {
+        this.college = college;
+    }
+
+    public String getCollege(){
+        return college;
+    }
+
+
+    /**
      * 课程名
      */
     private String courseName;
@@ -113,6 +127,4 @@ public class Course {
     public Date getEndTime() {
         return endTime;
     }
-
-
 }
